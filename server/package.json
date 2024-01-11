@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "author": "srihari7095",
   "main": "index.js",
-  
   "scripts": {
     "dev": "nodemon index.js",
     "build": "npm i"
