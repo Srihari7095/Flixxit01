@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": "srihari7095",
   "main": "index.js",
-  "license": "MIT",
+  
   "scripts": {
     "dev": "nodemon index.js",
     "build": "npm i"
