@@ -5,6 +5,10 @@ import http from "http";
 import mongoose from "mongoose";
 import "dotenv/config";
 import routes from "./src/routes/index.js";
+import Razorpay from "razorpay";
+
+const razorpayKey = process.env.RAZORPAY_KEY_ID;
+const razorpaySecret = process.env.RAZORPAY_SECRET_KEY;
 
 const app = express();
 
