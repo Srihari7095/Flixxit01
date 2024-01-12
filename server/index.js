@@ -5,15 +5,8 @@ import http from "http";
 import mongoose from "mongoose";
 import "dotenv/config";
 import routes from "./src/routes/index.js";
-import razorpay from "razorpay";
 
-const razorpayKey = process.env.RAZORPAY_KEY_ID;
-const razorpaySecret = process.env.RAZORPAY_SECRET_KEY;
 
-export const razorpay = new razorpay({
-  key_id: 'rzp_test_mGKdNrKBsxcHmC',
-  key_secret: 'poAZ8QO2dAPWig1QKoJxDOpX',
-});
 const app = express();
 
 app.use(
