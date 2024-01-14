@@ -4,8 +4,7 @@ let razorpay = new Razorpay({
     secret: process.env.RAZORPAY_SECRET_KEY
 });
 razorpay = new Razorpay({
-    key: 'newKey',
-    secret: 'newSecret'
+    key_id: razorpayKey,
+    key_secret: razorpaySecret,
 });
-
 
