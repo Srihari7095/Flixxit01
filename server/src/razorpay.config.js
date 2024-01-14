@@ -5,7 +5,7 @@ const razorpayKey = process.env.RAZORPAY_KEY_ID;
 const razorpaySecret = process.env.RAZORPAY_SECRET_KEY;
 
 export const razorpay = new Razorpay({
-  key_id: razorpayKey,
-  key_secret: razorpaySecret,
+  key_id: process.env.RAZORPAY_KEY_ID,
+  key_secret: process.env.RAZORPAY_SECRET_KEY,
 });
 
