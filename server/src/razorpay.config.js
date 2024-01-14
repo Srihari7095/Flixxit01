@@ -1,10 +1,11 @@
-import razorpay from "razorpay";
-let razorpay = new Razorpay({
-    key: process.env.RAZORPAY_KEY_ID,
-    secret: process.env.RAZORPAY_SECRET_KEY
-});
-razorpay = new Razorpay({
-    key_id: razorpayKey,
-    key_secret: razorpaySecret,
+import Razorpay from "razorpay";
+
+const razorpay = require('razorpay');
+const razorpayKey = process.env.RAZORPAY_KEY_ID;
+const razorpaySecret = process.env.RAZORPAY_SECRET_KEY;
+
+export const razorpay = new Razorpay({
+  key_id: razorpayKey,
+  key_secret: razorpaySecret,
 });
 
